@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Change App Name -->
+    <title>{{appName}}</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="lib/css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="lib/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper" style="min-height: 100%" layout="column">
+      <!--navbar directive that stays at the top of every page-->
+      <mv-navbar></mv-navbar>
+      <!--Main content that changes based on route-->
+      <!--<div ng-view flex layout="column"></div>-->
+    </div>
+    <!-- Angular Dependencies-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="lib/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="lib/js/plugins/morris/raphael.min.js"></script>
+    <script src="lib/js/plugins/morris/morris.min.js"></script>
+
+
+
+    <!--Settings-->
+    <script src="settings.js"></script>
+
+    <!-- Angular Main App -->
+    <script src="app/app.js"></script>
+
+    <!-- Angular Module - NavBar -->
+    <script src="app/navbar/navbar.module.js"></script>
+    <script src="app/navbar/navbar.directive.js"></script>
+
+
+  </body>
+</html>
